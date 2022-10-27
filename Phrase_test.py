@@ -31,3 +31,8 @@ class PhraseTest (unittest.TestCase):
     def testFailCaseUpper(self):
         self.assertFalse(generate_phrase("abc", "ABC"))
 
+    def testFailCase_addd_ddd(self):
+        self.assertTrue(generate_phrase("addd", "ddd"))
+
+    def testFailCase_aaaa_aaa(self):
+        self.assertTrue(generate_phrase("aaaa", "aaa"))
