@@ -25,20 +25,8 @@ IMPORTANT:
 
 """
 
-
-
 def generate_phrase(characters, phrase):
     unique_characters = ""
-<<<<<<< HEAD
-
-    for character in characters:
-        if character not in unique_characters:
-            unique_characters += character
-    if len(unique_characters) >= len(phrase):
-        if (phrase in characters):
-            return True
-        else:
-=======
     if(characters == phrase):
         return True
     for character in characters:
@@ -47,7 +35,6 @@ def generate_phrase(characters, phrase):
         if (phrase in characters):
             return True
         elif len(unique_characters) >= len(phrase):
->>>>>>> d3f5546 (Added few more test casees)
             return phrase in unique_characters
     else:
         return False
